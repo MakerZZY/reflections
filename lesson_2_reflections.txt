@@ -15,4 +15,8 @@ git reset <文件名> //从暂存区删除
 
 ————————————————————————
 git commit //提交，默认打开编辑器
-git commit -m "Commit message" //简化版 
+git commit -m "Commit message" //简化版
+commit message要用祈使句
+
+——————————————————————
+ 
