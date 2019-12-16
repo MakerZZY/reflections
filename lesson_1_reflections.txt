@@ -1,0 +1,42 @@
+查找两个大文件之间的差异
+
+1 Windows  FC  old new 
+2 Linux/Mac/GitBash diff -u old new
+-u 标准区别格式 
+短行
+notepad在命令行启动notepad++
+
+——————————————————————————————————
+如何取得旧文件？ -> 版本控制！
+概念 ：VCS/ Commit
+
+————————————————————————————————————
+git log
+git diff (SHA) (SHA)
+合适的时机提交
+
+————————————————————————————————————
+多文件同时追踪
+git log --stat // 给出更改信息
+
+——————————————————————————————
+git clone (URL)
+git config -- global user.name "name"
+git config -- global user.email  "email@qq.com"
+git config -- global color.ui auto   //为diff设置颜色区分
+
+————————————————————————
+@@ -392,7 +392,7 @@ 
+392代表行号 7代表行数
+
+————————————————————————————————
+git checkout <SHA> //将文件还原到commit时的状态
+让你可以随意进行“破坏性的”尝试
+
+————————————
+配置git
+配置.bash_profile
+global core.editor "'路径' -n -w"
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+
